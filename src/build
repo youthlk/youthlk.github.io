@@ -1,6 +1,15 @@
 #! /bin/bash
 
 jekyll build
+
+rm ../about -r
+rm ../assets -r 
+rm ../jekyll -r
+rm ../feed.xml 
+rm ../feed.xslt.xml
+
 mv -v _site/* ../
 rm _site/* -r
-adsf -r ../ -p 4000
+rm ../build
+
+ruby -run -ehttpd ../ -p4009
