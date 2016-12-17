@@ -1,0 +1,6 @@
+#! /bin/bash
+
+jekyll build
+mv -v _site/* ../
+rm _site/* -r
+adsf -r ../ -p 4000
