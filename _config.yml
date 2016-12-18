@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Lanka Youth Federation
-email: nir3al+youthlk@gmail.com
+# email: nir3al+youthlk@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Official website of Lanka Youth Federation
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://youthlk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
@@ -30,3 +30,10 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+sass:
+  sass_dir: _sass
+  include: ['_pages']
+  # style: compressed
+kramdown:
+  input: GFM
+  highlighter: pygments
