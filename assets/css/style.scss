@@ -1,11 +1,11 @@
 ---
 ---
 
-// override the bootstrap brand-primary colour
-// $brand-primary: #f00;
-
 // import bootstrap
-@import "bootstrap";
+@import "my-bootstrap";
+
+// override bootstrap
+.jumbotron { margin-bottom: 0; }
 
 // wireframe design colors (debug)
-@import "brightcolouredmock"
+@import "brightcolouredmock";
