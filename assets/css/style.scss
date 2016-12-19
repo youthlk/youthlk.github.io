@@ -9,3 +9,9 @@
 
 // wireframe design colors (debug)
 @import "brightcolouredmock";
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	// remove cloumn paddings of 15px
+	// .post, .column { padding-left: 0; padding-right: 0; }
+}
