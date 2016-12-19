@@ -3,6 +3,8 @@
 
 // import bootstrap
 @import "my-bootstrap";
+@import "theme/bootswatch";
+@import "theme/variables";
 
 // override bootstrap
 .jumbotron { margin-bottom: 0; }
