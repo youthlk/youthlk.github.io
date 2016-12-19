@@ -6,6 +6,10 @@
 
 // override bootstrap
 .jumbotron { margin-bottom: 0; }
+.navbar { 
+	margin-bottom: 0; 
+	border-radius: 0;
+}
 
 // wireframe design colors (debug)
 @import "brightcolouredmock";
