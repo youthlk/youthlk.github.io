@@ -1,0 +1,18 @@
+---
+---
+
+// override bootstrap
+.jumbotron, .carousel { margin-bottom: 0; }
+.navbar { 
+	margin-bottom: 0; 
+	border-radius: 0;
+}
+
+// wireframe design colors (debug)
+@import "brightcolouredmock";
+
+// content
+.cover-bg {
+	background-image: url("{{site.baseurl}}/assets/img/home/cover-md.jpg");
+	//
+}

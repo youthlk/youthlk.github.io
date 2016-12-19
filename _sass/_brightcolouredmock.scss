@@ -1,6 +1,13 @@
-.red { background-color: red; }
-.blue { background-color: blue; }
-.green { background-color: green; }
-.black { background-color: #333; color: white; }
-.yellow { background-color: yellow; }
-.orange { background-color: orange; }
+// .red { background-color: red; }
+// .blue { background-color: blue; }
+// .green { background-color: green; }
+// .black { background-color: #333; color: white; }
+// .yellow { background-color: yellow; }
+// .orange { background-color: orange; }
+
+div, nav, footer { 
+	border: 1px solid blue; 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+}

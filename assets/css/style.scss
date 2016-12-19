@@ -3,21 +3,14 @@
 
 // import bootstrap
 @import "my-bootstrap";
+// @import "bootstrap";
 @import "theme/bootswatch";
-@import "theme/variables";
-
-// override bootstrap
-.jumbotron { margin-bottom: 0; }
-.navbar { 
-	margin-bottom: 0; 
-	border-radius: 0;
-}
-
-// wireframe design colors (debug)
-@import "brightcolouredmock";
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
 	// remove cloumn paddings of 15px
 	// .post, .column { padding-left: 0; padding-right: 0; }
 }
+
+// helper classes
+.hide { display: none; }

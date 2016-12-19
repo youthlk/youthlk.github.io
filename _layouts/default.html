@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   
-  {% include head.html %}
+  <head>
 
-  <body class="black">
+    {% include head.html %}
+  
+    <link href="assets/css/home.css" rel="stylesheet">
+
+  </head>
+
+  <body>
 
     {% include header.html %}
 
-    <div class="jumbotron green">
-      <div class="container">jumbotron (no carousel)
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+
+          {% include carousel-home.html %}
+
+        </div>
       </div>
     </div>
 
@@ -60,7 +53,7 @@
         <div class="yellow col-xs-12 col-md-8 column">
 
           <div class="orange post row">
-            <div class="black col-xs-5 col-md-5">pic
+            <div class="orange col-xs-5 col-md-5">pic
               <br>
               <br>
               <br>
@@ -84,7 +77,7 @@
           </div>
 
           <div class="orange post row">
-            <div class="black col-xs-5 col-md-5">pic
+            <div class="orange col-xs-5 col-md-5">pic
               <br>
               <br>
               <br>
@@ -149,7 +142,15 @@
 
     <!-- Javascript assets -->
     <script src="assets/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/button.js"></script>
+    
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/bootstrap/util.js"></script> -->
+    <!-- <script src="assets/bootstrap/button.js"></script> -->
+    <!-- <script src="assets/bootstrap/scrollspy.js"></script> -->
+    <!-- <script src="assets/bootstrap/collapse.js"></script> -->
+    <!-- <script src="assets/bootstrap/carousel.js"></script> -->
+    <!-- <script src="assets/bootstrap/tab.js"></script> -->
 
   </body>
 </html>
