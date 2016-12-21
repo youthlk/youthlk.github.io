@@ -6,6 +6,8 @@
 // @import "bootstrap";
 @import "theme/bootswatch";
 
+@import "components";
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
 	// remove cloumn paddings of 15px
@@ -14,3 +16,10 @@
 
 // helper classes
 .hide { display: none; }
+.centered-text { text-align: center; }
+.inline-block { display: inline-block; }
+.vertical-align-top { vertical-align: top; }
+.rounded { border-radius: 100%; }
+.padding-undo { padding-left: 0; padding-right: 0; }
+.pic-bg-cover { background-repeat: no-repeat; background-size: cover; }
+// .full-height { height: 100%; position: absolute; }

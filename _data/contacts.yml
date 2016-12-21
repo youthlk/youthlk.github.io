@@ -1,0 +1,14 @@
+- name: Harry Potter
+  position: President
+  mail: something@mail.com
+  tel: +94 77 012 3456
+
+- name: Hermione Granger-Weasley
+  position: Secretary
+  mail: something@mail.com
+  tel: +94 77 012 3456
+
+- name: Ronald Weasley
+  position: Vice President
+  mail: something@mail.com
+  tel: +94 77 012 3456

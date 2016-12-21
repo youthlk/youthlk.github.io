@@ -26,7 +26,8 @@
     <div class="container red">
 
       <div class="row">
-        <div class="blue col-xs-6 col-md-4">fixed left column
+
+        <div class="blue col-xs-12 col-md-3">fixed left column
           <br>
           <br>
           <br>
@@ -50,7 +51,17 @@
           <br>
           <br>
         </div>
-        <div class="yellow col-xs-12 col-md-8 column">
+
+        <div class="yellow col-xs-12 col-md-9 column">
+
+          <div class="orange row bg-colored-pattern">
+            <div class="orange col-xs-12 col-md-6">
+              {% include causes.html %}
+            </div>
+            <div class="green col-xs-12 col-md-6">
+              {% include donate.html %}
+            </div>
+          </div>
 
           <div class="orange post row">
             <div class="orange col-xs-5 col-md-5">pic
@@ -100,43 +111,26 @@
             </div>
           </div>
 
-          <div class="row contact">contact us
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
-
-          <footer class="green row">&copy; All rights reserved by Sri Lanka Youth Federation, 2017
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </footer>
+          {% include contacts.html %}
 
         </div>
+
       </div>
+
+      <footer class="green row">&copy; All rights reserved by Sri Lanka Youth Federation, 2017
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </footer>
 
     </div>
 

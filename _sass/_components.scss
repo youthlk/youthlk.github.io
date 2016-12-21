@@ -1,0 +1,41 @@
+// contact card
+
+.contact-card {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	vertical-align: top;
+}
+
+// cause card
+
+.card.cause {
+	min-height: 300px;
+	.full-height {
+		min-height: 300px;
+		background-color: rgba(51, 51, 51, 0.9)
+	}
+	.triangle {
+		margin-top: 60px;
+		border-left-color: rgba(51, 51, 51, 0.9)
+	}
+}
+.card.cause.red {
+	.full-height { background-color: rgba(241, 0, 111, 0.9); }
+	.triangle { border-left-color: rgba(241, 0, 111, 0.9); }
+}
+.card.cause.blue {
+	.full-height { background-color: rgba(59, 0, 241, 0.9); }
+	.triangle { border-left-color: rgba(59, 0, 241, 0.9); }
+}
+.card .triangle {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid green;
+}
+.bg-colored-pattern {
+	background-image: url('../../media/permanent/dark-floral-pattern.jpg');
+}

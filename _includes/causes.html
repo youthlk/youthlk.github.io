@@ -1,0 +1,23 @@
+{% for cause in site.data.causes limit: 1 %}
+<div class="row pic-bg-cover card cause red" style="background-image: url('{{ cause.pic }}')">
+	<div class="col-xs-6 col-md-6 full-height">
+	  <h3>{{ cause.name }}</h3>
+	  <p>{{ cause.desc }}</p>
+	</div>
+	<div class="col-xs-6 col-md-6 padding-undo">
+		<div class="triangle"></div>
+	</div>
+</div>
+{% endfor %}
+
+{% for cause in site.data.causes limit: 1 %}
+<div class="row pic-bg-cover card cause blue" style="background-image: url('{{ cause.pic }}')">
+	<div class="col-xs-6 col-md-6 full-height">
+	  <h3>{{ cause.name }}</h3>
+	  <p>{{ cause.desc }}</p>
+	</div>
+	<div class="col-xs-6 col-md-6 padding-undo">
+		<div class="triangle"></div>
+	</div>
+</div>
+{% endfor %}
