@@ -1,0 +1,27 @@
+- pos: 0
+  filename: backpackers-camp
+  content: |
+    <h1>One Two Three</h1>
+    <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
+    <button class="btn btn-success btn-lg">Click me!</button>
+
+- pos: 1
+  filename: community-mentorship
+  content: |
+    <h1>One Two Three</h1>
+    <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
+    <button class="btn btn-success btn-lg">Click me!</button>
+
+- pos: 2
+  filename: young-people-happy
+  content: |
+    <h1>One Two Three</h1>
+    <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
+    <button class="btn btn-success btn-lg">Click me!</button>
+
+- pos: 3
+  filename: young-people-wine
+  content: |
+    <h1>One Two Three</h1>
+    <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
+    <button class="btn btn-success btn-lg">Click me!</button>

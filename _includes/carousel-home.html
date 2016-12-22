@@ -1,45 +1,21 @@
-<div id="carousel-id" class="carousel slide" data-ride="carousel">
+<div id="carousel-id" class="carousel slide" data-ride="carousel" data-interval="3000">
             
   <ol class="carousel-indicators">
-    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-    <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+    {% for cover in site.data.carousel %}
+    <li data-target="#carousel-id" data-slide-to="{{cover.pos}}" class="{%if cover.pos == 0 %}active{% endif %}"></li>
+    {% endfor %}
   </ol>
   
   <div class="carousel-inner">
     
-    <div class="item">
-      <img alt="First slide" src="{{site.baseurl}}/assets/img/home/cover-md.jpg">
+    {% for cover in site.data.carousel %}
+    <div class="item {%if cover.pos == 0 %}active{% endif %}">
+      <img alt="First slide" src="{{site.baseurl}}/media/home/{{cover.filename}}.jpg">
       <div class="container">
-        <div class="carousel-caption">
-          <h1>Example headline.</h1>
-          <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-        </div>
+        <div class="carousel-caption -bg-white -georgia">{{cover.content}}</div>
       </div>
     </div>
-
-    <div class="item">
-      <img alt="Second slide" src="{{site.baseurl}}/assets/img/home/cover-md.jpg">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="item active">
-      <img alt="Third slide" src="{{site.baseurl}}/assets/img/home/cover-md.jpg">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
 
   </div>
   <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>

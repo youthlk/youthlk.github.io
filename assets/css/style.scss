@@ -1,6 +1,10 @@
 ---
 ---
 
+
+// wireframe design colors (debug)
+// @import "brightcolouredmock";
+
 // import bootstrap
 @import "my-bootstrap";
 // @import "bootstrap";
@@ -14,6 +18,11 @@
 	// .post, .column { padding-left: 0; padding-right: 0; }
 }
 
+// global styles
+body {
+	background-color: black;
+}
+
 // helper classes
 .hide { display: none; }
 .centered-text { text-align: center; }
@@ -21,5 +30,7 @@
 .vertical-align-top { vertical-align: top; }
 .rounded { border-radius: 100%; }
 .padding-undo { padding-left: 0; padding-right: 0; }
+.padding-redo { padding-left: 15px; padding-right: 15px; }
 .pic-bg-cover { background-repeat: no-repeat; background-size: cover; }
-// .full-height { height: 100%; position: absolute; }
+.georgia { font-family: georgia, 'times new roman', serif; }
+.pad-vertical { padding-top: 15px; padding-bottom: 15px; }
