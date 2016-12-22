@@ -40,13 +40,23 @@
 	background-image: url('../../media/permanent/dark-floral-pattern.jpg');
 }
 
-.bottom-top-darken-333 {
-	// 
-}
+// cover welcome
 
 .dropdown-menu-full-center ul {
 	width: 100%;
     text-align: center;
 
     li { width: 100%; }
+}
+
+.nav-card {
+	background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    // background-size: contain;
+}
+@media (max-width: 518px) {
+	.nav-card {
+		background-image:none !important;
+	}
 }
