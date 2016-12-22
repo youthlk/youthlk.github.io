@@ -37,7 +37,10 @@
   border-left: 20px solid green;
 }
 .bg-colored-pattern {
-	background-image: url('../../media/permanent/dark-floral-pattern.jpg');
+	background-image: url('../../media/permanent/dark-floral-5.jpg');
+}
+.bg-dark {
+	background-color: rgba(51, 51, 51, 0.95);
 }
 
 // cover welcome
@@ -49,6 +52,8 @@
     li { width: 100%; }
 }
 
+// nav
+
 .nav-card {
 	background-repeat: no-repeat;
     background-position-x: 100%;
@@ -59,4 +64,28 @@
 	.nav-card {
 		background-image:none !important;
 	}
+}
+
+// home-sidebar
+
+.home-sidebar {
+	background-color: #dddddd;
+	color: #222222;
+	text-shadow: none;
+}
+
+.btn-fb {
+	background-color: #3b5998;
+    color: #fff;
+}
+
+.table-of-contents {
+	text-align: right;
+    border-right: 4px solid #55ff55;
+}
+
+.table-of-contents .sidebar-left .list-group-item { padding-right: 30px; }
+
+.sidebar-left .btn-nav {
+	margin-bottom: 3px;
 }

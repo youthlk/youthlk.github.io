@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-12 padding-undo">
+    <div class="sidebar-left text-center">
+      {% for link in site.data.home-sidebar %}
+      <a class="btn btn-{{link.colorcode}} btn-nav" href="#{{link.id}}">
+        {{link.title}}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">news (posts)
+    <br>
+  </div>
+</div>
