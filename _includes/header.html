@@ -11,14 +11,27 @@
 
   <nav class="orange navbar navbar-default visible-xs visible-sm hidden-md hidden-lg">
     <div class="container">
-      {% for page in site.data.navbar.pages %}
-      <a 
-        class="btn btn-lg btn-info" 
-        href="/{{ page.id }}" 
-      >
-        {{ page.title }}
-      </a>
-      {% endfor %}
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          {% for page in site.data.navbar.pages %}
+          <li>
+            <a 
+              class="" 
+              href="/{{ page.id }}" 
+            >
+              {{ page.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </nav>
 
