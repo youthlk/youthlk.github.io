@@ -15,7 +15,7 @@
     {% for contact in site.data.contacts %}
       <div class="row">
         <div class="col-xs-12 col-md-12 padding-undo">
-          <img class="-rounded" src="http://fakeimg.pl/120x120/00CED1/FFF/?text=img+placeholder">
+          <img class="-rounded" src="{{ contact.pic }}">
           <div class="details inline-block vertical-align-top">
             <h4>{{ contact.name }}</h4>
             <p>

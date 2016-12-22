@@ -1,17 +1,18 @@
 <div class="row">
-  <div class="col-xs-12 padding-undo">
-    <div class="sidebar-left text-center">
-      {% for link in site.data.home-sidebar %}
-      <a class="btn btn-{{link.colorcode}} btn-nav" href="#{{link.id}}">
-        {{link.title}}
-      </a>
-      {% endfor %}
-    </div>
+  <div class="col-xs-12 col-md-12 pad-vertical">
+    <a href="#">View all posts &gt;</a>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-xs-12">news (posts)
-    <br>
+{% for post in site.posts | limit: 4 %}
+<div class="row news card {{ post.covercolor }}" style="background-image: url('{{ post.coverimage }}')">
+  <div class="col-xs-12 col-md-12 empty">
+    <div class="triangle"></div>
+  </div>
+  <div class="col-xs-12 col-md-12 text">
+    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+    <a href="{{ post.url }}">(Read more...)</a>
   </div>
 </div>
+{% endfor %}

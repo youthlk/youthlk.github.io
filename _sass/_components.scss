@@ -11,6 +11,7 @@
 
 .card.cause {
 	min-height: 300px;
+	background-repeat: no-repeat;
 	.full-height {
 		min-height: 300px;
 		background-color: rgba(51, 51, 51, 0.9)
@@ -28,6 +29,10 @@
 	.full-height { background-color: rgba(59, 0, 241, 0.9); }
 	.triangle { border-left-color: rgba(59, 0, 241, 0.9); }
 }
+.card.cause.orange {
+	.full-height { background-color: rgba(241, 89, 0, 0.9); }
+	.triangle { border-left-color: rgba(241, 89, 0, 0.9); }
+}
 .card .triangle {
   width: 0; 
   height: 0; 
@@ -37,10 +42,53 @@
   border-left: 20px solid green;
 }
 .bg-colored-pattern {
-	background-image: url('../../media/permanent/dark-floral-5.jpg');
+	// background-image: url('../../media/permanent/dark-floral-5.jpg');
 }
 .bg-dark {
 	background-color: rgba(51, 51, 51, 0.95);
+}
+
+// news card
+
+.news.card {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	.empty {
+		height: 55%;
+		.triangle {
+			position: absolute;
+    		bottom: 0;
+
+		  width: 0; 
+		  height: 0; 
+		  border-left: 20px solid transparent;
+		  border-right: 20px solid transparent;
+		  
+		  border-bottom: 20px solid black;
+		}
+	}
+	.text {
+		color: white;
+		a { color: #81ffd5; }
+		height: 45%;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
+.card.news.red {
+	.text { background-color: rgba(241, 0, 111, 0.9); }
+	.triangle { border-bottom-color: rgba(241, 0, 111, 0.9); }
+}
+.card.news.blue {
+	.text { background-color: rgba(59, 0, 241, 0.9); }
+	.triangle { border-bottom-color: rgba(59, 0, 241, 0.9); }
+}
+.card.news.orange {
+	.text { background-color: rgba(241, 89, 0, 0.9); }
+	.triangle { border-bottom-color: rgba(241, 89, 0, 0.9); }
 }
 
 // cover welcome
@@ -55,6 +103,8 @@
 // nav
 
 .nav-card {
+	color: #333333;
+	background-color: #ffffff;
 	background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 50%;
@@ -88,4 +138,13 @@
 
 .sidebar-left .btn-nav {
 	margin-bottom: 3px;
+}
+
+// navbar
+
+.navbar {
+	text-align: center;
+}
+.btn-nav:hover {
+	background-color: black;
 }

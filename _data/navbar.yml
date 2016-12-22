@@ -1,0 +1,76 @@
+pages:
+  - id: about
+    title: About us
+    intro: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    pic: //lorempixel.com/500/300/people
+    links:
+      - id: intro
+        title: Introduction
+      - id: quote
+        title: Lorem ipsum
+      - id: two
+        title: Lorem ipsum
+      - id: three
+        title: Lorem ipsum
+  - id: news
+    title: News & updates
+    intro: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    pic: //lorempixel.com/500/300/people
+    links:
+      - id: intro
+        title: Introduction
+      - id: quote
+        title: Lorem ipsum
+      - id: two
+        title: Lorem ipsum
+      - id: three
+        title: Lorem ipsum
+  - id: events
+    title: Upcoming events
+    intro: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    pic: //lorempixel.com/500/300/people
+    links:
+      - id: intro
+        title: Introduction
+      - id: quote
+        title: Lorem ipsum
+      - id: two
+        title: Lorem ipsum
+      - id: three
+        title: Lorem ipsum
+  - id: members
+    title: Member clubs
+    intro: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    pic: //lorempixel.com/500/300/people
+    links:
+      - id: intro
+        title: Introduction
+      - id: quote
+        title: Lorem ipsum
+      - id: two
+        title: Lorem ipsum
+      - id: three
+        title: Lorem ipsum
+  - id: join
+    title: Join us
+    intro: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    pic: //lorempixel.com/500/300/people
+    links:
+      - id: intro
+        title: Introduction
+      - id: quote
+        title: Lorem ipsum
+      - id: two
+        title: Lorem ipsum
+      - id: three
+        title: Lorem ipsum

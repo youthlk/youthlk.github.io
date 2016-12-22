@@ -10,7 +10,7 @@
     
     {% for cover in site.data.carousel %}
     <div class="item {%if cover.pos == 0 %}active{% endif %}">
-      <img alt="First slide" src="{{site.baseurl}}/media/home/{{cover.filename}}.jpg">
+      <img alt="First slide" src="media/home/{{cover.filename}}.jpg">
       <div class="container">
         <div class="carousel-caption -bg-white -georgia">{{cover.content}}</div>
       </div>

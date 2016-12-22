@@ -8,50 +8,63 @@
       <br>
     </div>
   </div>
-  <nav class="orange navbar navbar-default">
-    <div class="container">page buttons
-      <br>
-      <br>
-      <br>
+
+  <nav class="orange navbar navbar-default visible-xs visible-sm hidden-md hidden-lg">
+    <div class="container">
+      {% for page in site.data.navbar.pages %}
+      <a 
+        class="btn btn-lg btn-info" 
+        href="/{{ page.id }}" 
+      >
+        {{ page.title }}
+      </a>
+      {% endfor %}
     </div>
   </nav>
 
-  <div class="container">
+  <div id="navbars">
     
-    <div class="nav-card row show" style="background-image: url('http://fakeimg.pl/520x300/00CED1/FFF/?text=img+placeholder')">
-      <div class="col-xs-12 col-md-7 col-lg-7">
-        <div class="row">
-          <div class="col-xs-12 col-lg-8">
-            <h2>About us</h2>
+    <nav class="orange navbar navbar-default hidden-xs hidden-sm visible-md visible-lg">
+      <div class="container">
+        {% for page in site.data.navbar.pages %}
+        <button 
+          class="btn btn-lg btn-info btn-nav" 
+          onclick="showNavcard('#card-{{ page.id }}');"
+          onmouseover="showNavcard('#card-{{ page.id }}');"
+        >
+          {{ page.title }}
+        </button>
+        {% endfor %}
+      </div>
+    </nav>
+    
+    <div class="container">
+      {% for page in site.data.navbar.pages %}
+      <div id="card-{{ page.id }}" class="nav-card row hidden -visible" style="background-image: url('//lorempixel.com/500/300/people')">
+        <div class="col-xs-12 col-md-7 col-lg-7">
+          <div class="row">
+            <div class="col-xs-12 col-lg-8">
+              <a href="/{{ page.id }}"><h2>{{ page.title }}</h2></a>
+            </div>
+          </div>
+          <div class="row pad-vertical">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              {{ page.intro }}
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              {% for section in page.links %}
+              <p>
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
+                <a href="/{{ page.id }}#{{ section.id }}">{{ section.title }}</a>
+              </p>
+              {%endfor %}
+            </div>
           </div>
         </div>
-        <div class="row pad-vertical">
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            <p>
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
-              <a href="#">About us</a>
-            </p>
-            <p>
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
-              <a href="#">About us</a>
-            </p>
-            <p>
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
-              <a href="#">About us</a>
-            </p>
-            <p>
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
-              <a href="#">About us</a>
-            </p>
-          </div>
+        <div class="col-xs-0 col-sm-0 col-md-5 col-lg-5">
         </div>
       </div>
-      <div class="col-xs-0 col-sm-0 col-md-5 col-lg-5">
-      </div>
+      {% endfor %}
     </div>
 
   </div>
