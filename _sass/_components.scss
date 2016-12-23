@@ -204,6 +204,9 @@
 // topbar
 
 .topbar {
+	width: 100%;
+	float: left;
+
 	.topbar-right, .topbar-left {
 		line-height: 80px;
 	    max-height: 80px;
