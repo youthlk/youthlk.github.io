@@ -5,7 +5,7 @@ date:   2016-12-17 14:11:09 +0530
 categories: jekyll update
 excerpt_separator: <!--more-->
 xxcoverimage: /media/posts/two.jpg
-coverimage: //lorempixel.com/500/500/people
+coverimage: /media/posts/news-1.jpg
 covercolor: blue
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. 

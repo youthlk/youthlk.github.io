@@ -1,11 +1,15 @@
 <div class="blue">
 
-  <div class="container">
-    <div class="red">logo and buttons
-      <br>
-      <br>
-      <br>
-      <br>
+  <div class="container padding-undo">
+    <div class="red row topbar">
+      <div class="col-sm-12 col-md-6 topbar-left">
+        <img src="/media/permanent/topbar-logo.png">
+      </div>
+      <div class="col-sm-12 col-md-6 topbar-right social-icons">
+          <a href="{{ site.facebook_url }}"><img src="/media/permanent/soc-icon-fb-round-greyout.png"></a>
+          <a href="{{ site.twitter_url }}"><img src="/media/permanent/soc-icon-tw-round-greyout.png"></a>
+          <a href="mailto:{{ site.email }}"><img src="/media/permanent/soc-icon-email-round-greyout.png"></a>
+      </div>
     </div>
   </div>
 
@@ -21,13 +25,13 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           {% for page in site.data.navbar.pages %}
-          <li>
-            <a 
-              class="" 
-              href="/{{ page.id }}" 
-            >
-              {{ page.title }}
-            </a>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ page.title }}<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              {% for section in page.links %}
+              <li><a href="/{{ page.id }}#{{ section.id }}">{{ section.title }}</a></li>
+              {% endfor %}
+            </ul>
           </li>
           {% endfor %}
         </ul>
@@ -37,11 +41,11 @@
 
   <div id="navbars">
     
-    <nav class="orange navbar navbar-default hidden-xs hidden-sm visible-md visible-lg">
+    <nav class="orange navbar navbar-default transparent hidden-xs hidden-sm visible-md visible-lg centered-text">
       <div class="container">
         {% for page in site.data.navbar.pages %}
         <button 
-          class="btn btn-lg btn-info btn-nav" 
+          class="btn btn-lg transparent btn-nav" 
           onclick="showNavcard('#card-{{ page.id }}');"
           onmouseover="showNavcard('#card-{{ page.id }}');"
         >
@@ -51,9 +55,10 @@
       </div>
     </nav>
     
+    <div class="container-fluid">
     <div class="container">
       {% for page in site.data.navbar.pages %}
-      <div id="card-{{ page.id }}" class="nav-card row hidden -visible" style="background-image: url('//lorempixel.com/500/300/people')">
+      <div id="card-{{ page.id }}" class="nav-card row hidden -visible" style="background-image: url('{{ page.pic  }}')">
         <div class="col-xs-12 col-md-7 col-lg-7">
           <div class="row">
             <div class="col-xs-12 col-lg-8">
@@ -68,7 +73,7 @@
               {% for section in page.links %}
               <p>
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
-                <a href="/{{ page.id }}#{{ section.id }}">{{ section.title }}</a>
+                <a href="/{{ page.id }}#{{ section.id }}"><strong>{{ section.title }}</strong></a>
               </p>
               {%endfor %}
             </div>
@@ -78,6 +83,7 @@
         </div>
       </div>
       {% endfor %}
+    </div>
     </div>
 
   </div>

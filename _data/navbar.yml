@@ -4,7 +4,7 @@ pages:
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    pic: //lorempixel.com/500/300/people
+    pic: /media/home/navcard-bg-3.jpg
     links:
       - id: intro
         title: Introduction
@@ -19,7 +19,7 @@ pages:
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    pic: //lorempixel.com/500/300/people
+    pic: /media/home/navcard-bg-5.jpg
     links:
       - id: intro
         title: Introduction
@@ -34,7 +34,7 @@ pages:
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    pic: //lorempixel.com/500/300/people
+    pic: /media/home/navcard-bg-2.jpg
     links:
       - id: intro
         title: Introduction
@@ -49,7 +49,7 @@ pages:
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    pic: //lorempixel.com/500/300/people
+    pic: /media/home/navcard-bg-4.jpg
     links:
       - id: intro
         title: Introduction
@@ -64,7 +64,7 @@ pages:
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    pic: //lorempixel.com/500/300/people
+    pic: /media/home/navcard-bg-1.jpg
     links:
       - id: intro
         title: Introduction

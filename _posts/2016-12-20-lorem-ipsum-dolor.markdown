@@ -5,7 +5,7 @@ date:   2016-12-22 14:11:09 +0530
 categories: jekyll update
 excerpt_separator: <!--more-->
 xxcoverimage: /media/posts/one.jpg
-coverimage: //lorempixel.com/500/500/people
+coverimage: /media/posts/news-1.jpg
 covercolor: blue
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
