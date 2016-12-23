@@ -1,16 +1,18 @@
 about: |
-  <p>
   Ipsum lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
   ex ea commodo consequat.
-  </p>
-  <p>
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-  dolore eu fugiat nulla pariatur.
-  </p>
 
 title: Sri Lanka Federation of Youth Clubs
+
+mission: |
+  Our <strong>mission</strong> is to lorem ipsum dolor sit amet, consectetur 
+  adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+
+vision: |
+  Our <strong>vision</strong> is that lorem ipsum dolor sit amet, consectetur 
+  adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 
 contact_us: |
   <p>
