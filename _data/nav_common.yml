@@ -1,0 +1,30 @@
+home:
+  id: home 
+  url: /
+  title: Home
+about:
+  id: about 
+  url: /about
+  title: About us
+events:
+  id: events 
+  url: /events
+  title: Events
+clubs:
+  id: clubs 
+  url: /clubs 
+  title: Member clubs 
+join:
+  id: join 
+  url: /join 
+  title: Join us 
+
+news-index:
+  id: news-index 
+  url: /news-index
+  title: News & updates
+
+news:
+  id: news 
+  url: /
+  title: News article

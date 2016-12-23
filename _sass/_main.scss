@@ -1,22 +1,7 @@
----
----
-
-
-// wireframe design colors (debug)
-// @import "brightcolouredmock";
-
-// import bootstrap
 @import "my-bootstrap";
-// @import "bootstrap";
 @import "theme/bootswatch";
 
 @import "components";
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
-	// remove cloumn paddings of 15px
-	// .post, .column { padding-left: 0; padding-right: 0; }
-}
 
 // global styles
 body {
@@ -43,12 +28,3 @@ body {
 .italic { font-style: italic; }
 .pad-vertical { padding-top: 15px; padding-bottom: 15px; }
 .transparent { background-color: transparent; }
-
-// hashtag navigation position fix
-// .nav-pseudo:before {
-// 	  display: block; 
-// 	  content: " "; 
-// 	  margin-top: -285px; 
-// 	  height: 285px; 
-// 	  visibility: hidden; 
-// }

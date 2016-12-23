@@ -19,8 +19,8 @@ pages:
         title: Donations
       - id: contacts
         title: Contact Us
-  - id: about-us
-    url: about-us
+  - id: about
+    url: about
     title: About us
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 

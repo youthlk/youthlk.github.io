@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+{% assign author = site.data.authors[page.author] %}
+
+<!-- START STYLESHEETS -->
+    
+  <link href="/assets/css/post.css" rel="stylesheet">
+
+<!-- END STYLESHEETS -->
+
+<div class="container-fluid post-cover text-center" style="background-image: url('{{page.coverimage}}')">
+	<div class="bubble">
+		<div class="post-cover-text">
+			<h1 class="post-cover-title">{{ page.title }}</h1>
+			<div class="post-cover-subtitle">{{ page.subtitle }}</div>
+			<hr width="40%">
+			<p>
+				<div class="">By <strong><a class="post-cover-author" href="{{author.facebook}}" target="_blank">{{ author.name }}</a></strong></div>
+				<div>{{ page.date | date: '%B %d, %Y' }}</div>
+				<div>Tagged <i>{{ page.categories | join: ', ' }}</i></div>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container red">
+
+  <div class="row">
+
+    <div class="yellow col-xs-12 col-md-8 column pad-vertical post-body">
+
+      <div>{{ content }}</div>
+
+      <div>
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        var disqus_config = function () {
+        this.page.url = '{{site.domain}}';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '{{disqus_id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//youthlk.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                        
+      </div>
+
+    </div>
+
+    <div class="blue col-xs-12 col-md-4 -pad-vertical">
+
+      {% include about-box.html %}
+      
+      {% include home-sidebar.html %}
+
+    </div>
+
+  </div>
+
+  <style type="text/css">
+    /* highlight current page */
+    .card-btn-post { color: #333333 !important; background-color: white !important; }
+  </style>
+
+</div>

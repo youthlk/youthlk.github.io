@@ -3,6 +3,7 @@ permalink: /news/:year/:month/:day/:title.html
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-12-17 14:11:09 +0530
+author: dave
 categories: jekyll update
 excerpt_separator: <!--more-->
 xxcoverimage: /media/posts/two.jpg

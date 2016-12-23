@@ -1,0 +1,15 @@
+dave:
+  name: David Smith
+  twitter: DaveSmith99
+  email: davesmith@example.com
+  pic: /media/people/dave.jpg
+  facebook: //facebook.com/zuck
+  website: //example-one.com
+
+nir:
+  name: Ravana Wayidhyasekara
+  twitter: ravanaw92
+  email: ravana@example.com
+  pic: /media/people/nir.jpg
+  facebook: //facebook.com/zuck
+  website: //example-two.com

@@ -266,3 +266,10 @@
 	color: #222222;
 	text-shadow: none;
 }
+
+// about-box on special pages and posts (not on home)
+
+.about-box {
+	.title {font-size: 24px;}
+	background-color: #252548;
+}

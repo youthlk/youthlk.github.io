@@ -1,9 +1,13 @@
 ---
 permalink: /news/:year/:month/:day/:title.html
 layout: post
+
 title:  "Lorem ipsum dolor sit"
+subtitle: Excepteur sint occaecat cupidatat non proiden
+author: nir
 date:   2016-12-22 14:11:09 +0530
 categories: jekyll update
+
 excerpt_separator: <!--more-->
 xxcoverimage: /media/posts/one.jpg
 coverimage: /media/posts/news-1.jpg
