@@ -273,3 +273,17 @@
 	.title {font-size: 24px;}
 	background-color: #252548;
 }
+
+// section-links at top
+
+.section-list {
+	a { 
+		background-color: #efefef; 
+		padding: 2px;
+		margin: 2px;
+		color: #819bff;
+	}
+	line-height: 26px;
+    color: blue;
+    // border-radius: 3px;
+}

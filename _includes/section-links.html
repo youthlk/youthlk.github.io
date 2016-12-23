@@ -1,0 +1,6 @@
+<div class="section-list">
+	/
+	{% for section in site.data.nav_common[page.pageid].links %}
+	  <a href="#{{section.id}}">{{section.title}}</a> /
+	{% endfor %}
+</div>
