@@ -1,3 +1,5 @@
+<div id="causes"></div>
+
 {% assign reversedcauses = site.data.causes | reverse %}
 {% for cause in reversedcauses | limit: 2 %}
 <div class="row pic-bg-cover card cause {{ cause.covercolor }}" style="background-image: url('{{ cause.pic }}')">

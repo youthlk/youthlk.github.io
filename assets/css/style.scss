@@ -36,3 +36,12 @@ body {
 .italic { font-style: italic; }
 .pad-vertical { padding-top: 15px; padding-bottom: 15px; }
 .transparent { background-color: transparent; }
+
+// hashtag navigation position fix
+// .nav-pseudo:before {
+// 	  display: block; 
+// 	  content: " "; 
+// 	  margin-top: -285px; 
+// 	  height: 285px; 
+// 	  visibility: hidden; 
+// }

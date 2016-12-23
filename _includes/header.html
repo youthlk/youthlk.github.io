@@ -2,10 +2,10 @@
 
   <div class="container padding-undo">
     <div class="red row topbar">
-      <div class="col-sm-12 col-md-6 topbar-left">
-        <img src="/media/permanent/topbar-logo.png">
+      <div class="col-sm-12 col-md-7 topbar-left" style="background-image: url(/media/permanent/topbar-logo.png);">
+        <!-- <img src="/media/permanent/topbar-logo.png"> -->
       </div>
-      <div class="col-sm-12 col-md-6 topbar-right social-icons">
+      <div class="col-sm-12 col-md-5 topbar-right social-icons">
           <a href="{{ site.facebook_url }}"><img src="/media/permanent/soc-icon-fb-round-greyout.png"></a>
           <a href="{{ site.twitter_url }}"><img src="/media/permanent/soc-icon-tw-round-greyout.png"></a>
           <a href="mailto:{{ site.email }}"><img src="/media/permanent/soc-icon-email-round-greyout.png"></a>
@@ -26,10 +26,10 @@
         <ul class="nav navbar-nav">
           {% for page in site.data.navbar.pages %}
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ page.title }}<span class="caret"></span></a>
+            <a href="#" class="card-btn-{{ page.id }} dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ page.title }}<span class="caret"></span></a>
             <ul class="dropdown-menu">
               {% for section in page.links %}
-              <li><a href="/{{ page.id }}#{{ section.id }}">{{ section.title }}</a></li>
+              <li><a href="/{{ page.url }}#{{ section.id }}">{{ section.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -45,7 +45,7 @@
       <div class="container">
         {% for page in site.data.navbar.pages %}
         <button 
-          class="btn btn-lg transparent btn-nav" 
+          class="card-btn-{{ page.id }} btn btn-lg transparent btn-nav" 
           onclick="showNavcard('#card-{{ page.id }}');"
           onmouseover="showNavcard('#card-{{ page.id }}');"
         >
@@ -58,11 +58,11 @@
     <div class="container-fluid">
     <div class="container">
       {% for page in site.data.navbar.pages %}
-      <div id="card-{{ page.id }}" class="nav-card row hidden -visible" style="background-image: url('{{ page.pic  }}')">
+      <div id="card-{{ page.id }}" class="nav-card row drop-modal container hidden -visible" style="background-image: url('{{ page.pic  }}')">
         <div class="col-xs-12 col-md-7 col-lg-7">
           <div class="row">
             <div class="col-xs-12 col-lg-8">
-              <a href="/{{ page.id }}"><h2>{{ page.title }}</h2></a>
+              <a href="/{{ page.url }}"><h2>{{ page.title }}</h2></a>
             </div>
           </div>
           <div class="row pad-vertical">
@@ -73,7 +73,7 @@
               {% for section in page.links %}
               <p>
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
-                <a href="/{{ page.id }}#{{ section.id }}"><strong>{{ section.title }}</strong></a>
+                <a href="/{{ page.url }}#{{ section.id }}"><strong>{{ section.title }}</strong></a>
               </p>
               {%endfor %}
             </div>

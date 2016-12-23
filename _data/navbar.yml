@@ -1,5 +1,26 @@
 pages:
+  - id: home
+    url: 
+    title: Home
+    intro: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    pic: /media/home/navcard-bg-6.jpg
+    links:
+      - id: welcome
+        title: Introduction
+      - id: carousel
+        title: Featured Media
+      - id: news
+        title: Latest news
+      - id: causes
+        title: Projects & Causes
+      - id: donate
+        title: Donations
+      - id: contacts
+        title: Contact Us
   - id: about
+    url: about
     title: About us
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -15,6 +36,7 @@ pages:
       - id: three
         title: Lorem ipsum
   - id: news
+    url: news
     title: News & updates
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -30,6 +52,7 @@ pages:
       - id: three
         title: Lorem ipsum
   - id: events
+    url: events
     title: Upcoming events
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -45,6 +68,7 @@ pages:
       - id: three
         title: Lorem ipsum
   - id: members
+    url: members
     title: Member clubs
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -60,6 +84,7 @@ pages:
       - id: three
         title: Lorem ipsum
   - id: join
+    url: join
     title: Join us
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 

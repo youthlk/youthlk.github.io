@@ -195,6 +195,12 @@
 	margin-bottom: 15px;
 }
 
+.drop-modal {
+	position: absolute;
+    z-index: 100;
+    box-shadow: black 0px 20px 40px;
+}
+
 // topbar
 
 .topbar {
@@ -204,15 +210,9 @@
 	    overflow: hidden;
 	}
 	.topbar-left {
-		.brand-text {
-			font-family: georgia;
-			.brand-main {
-				font-size: 24px;
-			}
-			.brand-sub {
-				font-size: 18px;
-			}
-		}
+		height: 80px;
+		background-size: contain;
+    	background-repeat: no-repeat;
 	}
 	.topbar-right {
 		text-align: right;
@@ -225,4 +225,31 @@
 	.topbar-left img {
 		height: 80px;
 	}
+	.topbar-right.social-icons img:hover {
+		border: 3px solid red;
+		border-radius: 100%;
+	}
 }
+
+// back-to-top button
+
+.back-to-top {
+
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #ff9000;
+	
+	i {
+	  font-size: 60px;
+	}
+}
+.back-to-top:hover { text-decoration: none; }
