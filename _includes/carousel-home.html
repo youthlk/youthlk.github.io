@@ -1,8 +1,8 @@
-<div id="carousel-id" class="carousel slide" data-ride="carousel" data-interval="3000">
+<div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="3000">
             
   <ol class="carousel-indicators">
     {% for cover in site.data.carousel %}
-    <li data-target="#carousel-id" data-slide-to="{{cover.pos}}" class="{%if cover.pos == 0 %}active{% endif %}"></li>
+    <li data-target="#carousel-home" data-slide-to="{{cover.pos}}" class="{%if cover.pos == 0 %}active{% endif %}"></li>
     {% endfor %}
   </ol>
   
@@ -20,7 +20,7 @@
     {% endfor %}
 
   </div>
-  <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+  <a class="left carousel-control" href="#carousel-home" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#carousel-home" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
   
 </div>
