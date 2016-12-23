@@ -74,6 +74,16 @@
 		display: block;
 		margin: 0 auto;
 	}
+	p:first-child:first-letter {
+		float: left;
+	    font-size: 50px;
+	    line-height: 1;
+	    font-weight: bold;
+	    margin-right: 9px;
+	    color: #9c0;
+	    // font-family: "Times New Roman", Times, serif;
+	    // text-shadow: #690 .05em .05em;
+	}
 }
 @media (max-width: $screen-md) {
 	.post-body {
@@ -84,4 +94,12 @@
 	.post-body {
 		font-size: 18px;
 	}
+}
+
+// disqus
+
+// sharethis.com
+
+.stButton_gradient {
+	// height: 22px !important; // works only for Google+ button
 }

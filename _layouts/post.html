@@ -29,11 +29,27 @@ layout: default
 
   <div class="row">
 
-    <div class="yellow col-xs-12 col-md-8 column pad-vertical post-body">
+    <div class="yellow col-xs-12 col-md-8 column pad-vertical">
 
-      <div>{{ content }}</div>
+      <div class="social-buttons-sharethiscom">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <span class='st_googleplus_hcount' displayText='Google +'></span>
+        <span class='st_email_hcount' displayText='Email'></span>
+      </div>
 
-      <div>
+      <div class="pad-vertical post-body">{{ content }}</div>
+
+      <div class="social-buttons-sharethiscom">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <span class='st_googleplus_hcount' displayText='Google +'></span>
+        <span class='st_email_hcount' displayText='Email'></span>
+      </div>
+
+      <div class="disqus-content">
         <div id="disqus_thread"></div>
         <script>
 
@@ -77,5 +93,10 @@ layout: default
     /* highlight current page */
     .card-btn-post { color: #333333 !important; background-color: white !important; }
   </style>
+
+  <!-- sharethis.com scripts -->
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "63545427-e233-4b67-8aa3-c3ee6910ec53", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </div>
