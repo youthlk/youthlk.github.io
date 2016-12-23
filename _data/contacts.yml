@@ -2,16 +2,26 @@
   position: President
   mail: something@mail.com
   tel: +94 77 012 3456
-  pic: //lorempixel.com/120/120/people
+  pic: /media/people/marion.jpg
+  covercolor: green
 
 - name: Hermione Granger-Weasley
   position: Secretary
   mail: something@mail.com
   tel: +94 77 012 3456
-  pic: //lorempixel.com/120/120/people
+  pic: /media/people/elmer.jpg
+  covercolor: purple
 
 - name: Ronald Weasley
   position: Vice President
   mail: something@mail.com
   tel: +94 77 012 3456
-  pic: //lorempixel.com/120/120/people
+  pic: /media/people/colleen.jpg
+  covercolor: blue
+
+- name: Ronald Weasley
+  position: Vice President
+  mail: something@mail.com
+  tel: +94 77 012 3456
+  pic: /media/people/roger.jpg
+  covercolor: orange

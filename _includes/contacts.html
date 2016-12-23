@@ -12,20 +12,21 @@
     </p>
   </div>
   <div class="col-xs-12 col-md-7">
-    {% for contact in site.data.contacts %}
       <div class="row">
-        <div class="col-xs-12 col-md-12 padding-undo">
-          <img class="-rounded" src="{{ contact.pic }}">
-          <div class="details inline-block vertical-align-top">
-            <h4>{{ contact.name }}</h4>
-            <p>
-              <strong>{{ contact.position }}</strong>
-              <br><a href="mailto:{{ contact.mail }}">{{ contact.mail }}</a>
-              <br><span>{{ contact.tel }}</span>
-            </p>
+      {% for contact in site.data.contacts %}
+          <div class="contact-card col-xs-6 col-sm-4 col-md-6 col-lg-6 padding-undo">
+            <div class="col-xs-12 col-md-12 empty" style="background-image: url('{{ contact.pic }}')">
+            </div>
+            <div class="col-xs-12 col-md-12 text pad-vertical {{ contact.covercolor }}">
+              <strong>{{ contact.name }}</strong>
+              <p>
+                <i>{{ contact.position }}</i>
+                <br><a href="mailto:{{ contact.mail }}">{{ contact.mail }}</a>
+                <br><span>{{ contact.tel }}</span>
+              </p>
+            </div>
           </div>
-        </div>
+      {% endfor %}
       </div>
-    {% endfor %}
   </div>
 </div>

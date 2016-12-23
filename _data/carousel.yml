@@ -1,27 +1,43 @@
 - pos: 0
   filename: backpackers-camp
   content: |
-    <h1>One Two Three</h1>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      <h3>One Two Three</h3>
+    </a>
     <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
-    <button class="btn btn-success btn-lg">Click me!</button>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      Read more &gt; &gt;
+    </a>
 
 - pos: 1
   filename: community-mentorship
   content: |
-    <h1>One Two Three</h1>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      <h3>One Two Three</h3>
+    </a>
     <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
-    <button class="btn btn-success btn-lg">Click me!</button>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      Read more &gt; &gt;
+    </a>
 
 - pos: 2
   filename: young-people-happy
   content: |
-    <h1>One Two Three</h1>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      <h3>One Two Three</h3>
+    </a>
     <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
-    <button class="btn btn-success btn-lg">Click me!</button>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      Read more &gt; &gt;
+    </a>
 
 - pos: 3
   filename: young-people-wine
   content: |
-    <h1>One Two Three</h1>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      <h3>One Two Three</h3>
+    </a>
     <p>Decay neon shanty town denim digital San Francisco 8-bit military-grade tower dolphin hotdog.</p>
-    <button class="btn btn-success btn-lg">Click me!</button>
+    <a href='/news/2016/12/17/welcome-to-jekyll.html'>
+      Read more &gt; &gt;
+    </a>

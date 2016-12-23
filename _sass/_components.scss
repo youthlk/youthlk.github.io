@@ -1,10 +1,30 @@
 // contact card
 
 .contact-card {
-	display: inline-block;
-	width: 150px;
-	height: 150px;
-	vertical-align: top;
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+	.empty {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 50%;
+		position: absolute;
+		background-position-y: 50%;
+	}
+	.text {
+		background-color: #9242f4;
+		color: white;
+		a { color: #81ffd5; }
+		height: 50%;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.text.orange { background-color: #923d15; }
+	.text.purple { background-color: #9a3b9a; }
+	.text.blue { background-color: #3c3cad; }
+	.text.green { background-color: #3a693a; }
 }
 
 // cause card
@@ -98,8 +118,14 @@
 .dropdown-menu-full-center ul {
 	width: 100%;
     text-align: center;
+    top: initial;
+    li a {
+	    line-height: 16px;
+	    font-size: 16px;
+    }
 
     li { width: 100%; }
+
 }
 
 @media (min-width: 970px) and (max-width: 1170px) {
@@ -115,7 +141,8 @@
 
 .cover-bg-img {
 	background-repeat: no-repeat;
-	background-size: contain;
+	// background-size: contain;
+    background-position-x: 50%;
 }
 
 // nav

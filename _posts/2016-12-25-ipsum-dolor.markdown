@@ -1,4 +1,5 @@
 ---
+permalink: /news/:year/:month/:day/:title.html
 layout: post
 title:  "Lorem ipsum dolor sit"
 date:   2016-12-22 14:11:09 +0530
@@ -6,7 +7,7 @@ categories: jekyll update
 excerpt_separator: <!--more-->
 xxcoverimage: /media/posts/one.jpg
 coverimage: /media/posts/news-1.jpg
-covercolor: red
+covercolor: orange
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. 
