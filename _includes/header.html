@@ -25,11 +25,12 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           {% for page in site.data.navbar.pages %}
+          {% assign meta = site.data.nav_common[page.id] %}
           <li class="dropdown">
-            <a href="#" class="card-btn-{{ page.id }} dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ page.title }}<span class="caret"></span></a>
+            <a href="#" class="card-btn-{{ meta.id }} dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ meta.title }}<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              {% for section in page.links %}
-              <li><a href="/{{ page.url }}#{{ section.id }}">{{ section.title }}</a></li>
+              {% for section in meta.links %}
+              <li><a href="/{{ meta.url }}#{{ section.id }}">{{ section.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -44,12 +45,13 @@
     <nav class="orange navbar navbar-default transparent hidden-xs hidden-sm visible-md visible-lg centered-text">
       <div class="container">
         {% for page in site.data.navbar.pages %}
+        {% assign meta = site.data.nav_common[page.id] %}
         <button 
-          class="card-btn-{{ page.id }} btn btn-lg transparent btn-nav" 
-          onclick="showNavcard('#card-{{ page.id }}');"
-          onmouseover="showNavcard('#card-{{ page.id }}');"
+          class="card-btn-{{ meta.id }} btn btn-lg transparent btn-nav" 
+          onclick="showNavcard('#card-{{ meta.id }}');"
+          onmouseover="showNavcard('#card-{{ meta.id }}');"
         >
-          {{ page.title }}
+          {{ meta.title }}
         </button>
         {% endfor %}
       </div>
@@ -58,22 +60,23 @@
     <div class="container-fluid">
     <div class="container">
       {% for page in site.data.navbar.pages %}
-      <div id="card-{{ page.id }}" class="nav-card row drop-modal container hidden -visible" style="background-image: url('{{ page.pic  }}')">
+      {% assign meta = site.data.nav_common[page.id] %}
+      <div id="card-{{ meta.id }}" class="nav-card row drop-modal container hidden -visible" style="background-image: url('{{ meta.pic  }}')">
         <div class="col-xs-12 col-md-7 col-lg-7">
           <div class="row">
             <div class="col-xs-12 col-lg-8">
-              <a href="/{{ page.url }}"><h2>{{ page.title }}</h2></a>
+              <a href="/{{ meta.url }}"><h2>{{ meta.title }}</h2></a>
             </div>
           </div>
           <div class="row pad-vertical">
             <div class="col-xs-12 col-sm-6 col-md-6">
-              {{ page.intro }}
+              {{ meta.intro }}
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-              {% for section in page.links %}
+              {% for section in meta.links %}
               <p>
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
-                <a href="/{{ page.url }}#{{ section.id }}"><strong>{{ section.title }}</strong></a>
+                <a href="/{{ meta.url }}#{{ section.id }}"><strong>{{ section.title }}</strong></a>
               </p>
               {%endfor %}
             </div>

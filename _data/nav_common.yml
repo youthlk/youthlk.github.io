@@ -1,30 +1,106 @@
 home:
-  id: home 
-  url: /
+  id: home
+  url: 
   title: Home
+  intro: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  pic: /media/home/navcard-bg-6.jpg
+  links:
+    - id: welcome
+      title: Introduction
+    - id: carousel
+      title: Featured Media
+    - id: news
+      title: Latest news
+    - id: causes
+      title: Projects & Causes
+    - id: donate
+      title: Donations
+    - id: contacts
+      title: Contact Us
 about:
-  id: about 
-  url: /about
+  id: about
+  url: about
   title: About us
-events:
-  id: events 
-  url: /events
-  title: Events
-clubs:
-  id: clubs 
-  url: /clubs 
-  title: Member clubs 
-join:
-  id: join 
-  url: /join 
-  title: Join us 
-
+  intro: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  pic: /media/home/navcard-bg-3.jpg
+  links:
+    - id: intro
+      title: Introduction
+    - id: quote
+      title: Lorem ipsum
+    - id: two
+      title: Lorem ipsum
+    - id: three
+      title: Lorem ipsum
 news-index:
-  id: news-index 
-  url: /news-index
+  id: news-index
+  url: news-index
   title: News & updates
-
-news:
-  id: news 
-  url: /
-  title: News article
+  intro: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  pic: /media/home/navcard-bg-5.jpg
+  links:
+    - id: intro
+      title: Introduction
+    - id: quote
+      title: Lorem ipsum
+    - id: two
+      title: Lorem ipsum
+    - id: three
+      title: Lorem ipsum
+events:
+  id: events
+  url: events
+  title: Upcoming events
+  intro: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  pic: /media/home/navcard-bg-2.jpg
+  links:
+    - id: intro
+      title: Introduction
+    - id: quote
+      title: Lorem ipsum
+    - id: two
+      title: Lorem ipsum
+    - id: three
+      title: Lorem ipsum
+clubs:
+  id: clubs
+  url: clubs
+  title: Member clubs
+  intro: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  pic: /media/home/navcard-bg-4.jpg
+  links:
+    - id: intro
+      title: Introduction
+    - id: quote
+      title: Lorem ipsum
+    - id: two
+      title: Lorem ipsum
+    - id: three
+      title: Lorem ipsum
+join:
+  id: join
+  url: join
+  title: Join us
+  intro: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  pic: /media/home/navcard-bg-1.jpg
+  links:
+    - id: intro
+      title: Introduction
+    - id: quote
+      title: Lorem ipsum
+    - id: two
+      title: Lorem ipsum
+    - id: three
+      title: Lorem ipsum
