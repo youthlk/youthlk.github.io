@@ -19,8 +19,8 @@ pages:
         title: Donations
       - id: contacts
         title: Contact Us
-  - id: about
-    url: about
+  - id: about-us
+    url: about-us
     title: About us
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -35,8 +35,8 @@ pages:
         title: Lorem ipsum
       - id: three
         title: Lorem ipsum
-  - id: news
-    url: news
+  - id: news-index
+    url: news-index
     title: News & updates
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -67,8 +67,8 @@ pages:
         title: Lorem ipsum
       - id: three
         title: Lorem ipsum
-  - id: members
-    url: members
+  - id: clubs
+    url: clubs
     title: Member clubs
     intro: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, 

@@ -23,6 +23,13 @@ body {
 	background-color: black;
 }
 
+// override bootstrap
+.jumbotron, .carousel { margin-bottom: 0; }
+.navbar { 
+	margin-bottom: 0; 
+	border-radius: 0;
+}
+
 // helper classes
 .hide { display: none; }
 .centered-text { text-align: center; }
